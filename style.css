@@ -351,6 +351,34 @@ body {
     }
     $blue-color : #3b5998;
 $gray-color : #eee;
+    @media only screen and (max-width: 320px) {
+    .images {
+        height: 17em;
+    }
+    .blue-bg-outer {
+        width: 16em;
+        height: 16em;
+
+    }
+
+    .white-bg {
+        width: 13em;
+        height: 13em;
+    }
+
+    .blue-bg {
+        width: 11em;
+        height: 11em;
+    }
+
+    .blue-bg img {
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+        width: 100%;
+    }
+    $blue-color : #3b5998;
+$gray-color : #eee;
 
 body {
   margin: 35px auto;
