@@ -8,32 +8,6 @@
     margin: 0;
     padding: 0;
 }
-.spinner {
-  width: 3em;
-  height: 3em;
-  cursor: not-allowed;
-  border-radius: 50%;
-  border: 2px solid #444;
-  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
-  animation: rot55 0.7s linear infinite;
-}
-
-.spinnerin {
-  border: 2px solid #444;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes rot55 {
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -134,6 +108,54 @@ section {
     box-shadow: 0 0 20px var(--secondary-color);
     border-color: var(--secondary-color);
     transition: all .3s ease-in-out;
+    L SCSS 
+
+    Result
+    Skip Results Iframe
+
+EDIT ON
+
+$blue-color : #3b5998;
+$gray-color : #eee;
+
+body {
+  margin: 35px auto;
+  text-align: center;
+  display: block;
+}
+
+#facebook-icon {
+  background: $blue-color;
+  text-indent: -999em;
+  width: 100px;
+  height: 110px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  border: 15px solid $blue-color;
+  border-bottom: 0;
+  display: inline-block;
+  &::before {
+    background: $blue-color;
+    content: "/20";
+    position: absolute;
+    bottom: -30px;
+    right: -37px;
+    width: 40px;
+    height: 90px;
+    border: 20px solid $gray-color;
+    border-radius: 25px;
+  }
+  &::after {
+    background: $gray-color;
+    content: "/20";
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    width: 55px;
+    height: 20px;
+  }
+}
 
 }
 
@@ -327,4 +349,13 @@ section {
         right: 10px;
         width: 100%;
     }
+    $blue-color : #3b5998;
+$gray-color : #eee;
+
+body {
+  margin: 35px auto;
+  text-align: center;
+  display: block;
+}
+
 }
